@@ -20,8 +20,8 @@ void main()
             SendMessageToPC(oActivator, "to talk to |" + GetName(oTarget) + "|");
 
             AssignCommand(
-                oActivator,
-                ActionStartConversation(oTarget, sDlg)
+                oTarget,
+                ActionStartConversation(oActivator, sDlg)
             );
             break;
     }
